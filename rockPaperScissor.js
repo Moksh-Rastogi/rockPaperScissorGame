@@ -27,8 +27,8 @@ let score = JSON.parse(localStorage.getItem('score')) || {
 
       document.querySelector('.result').innerHTML = result;
       document.querySelector('.moves').innerHTML = `
-        You chose <img src="rockPaperScissor-images/${myMove}-emoji.png" class="move-icon move-icon-result"> 
-          and  Computer chose <img src="rockPaperScissor-images/${computerMove}-emoji.png" class="move-icon move-icon-result">
+        You chose <img src="${myMove}-emoji.png" class="move-icon move-icon-result"> 
+          and  Computer chose <img src="${computerMove}-emoji.png" class="move-icon move-icon-result">
       `;
 
       updateScoreOnScreen();
